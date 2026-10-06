@@ -1,6 +1,5 @@
 SHELL := /bin/bash
-.PHONY: 
-	serve help
+.PHONY: serve help lint lint_fix build kill_port
 
 EXPECTED_PORT := 8080
 
