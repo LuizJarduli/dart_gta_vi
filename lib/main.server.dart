@@ -9,7 +9,6 @@ import 'package:jaspr/server.dart';
 
 // Imports the [App] component.
 import 'app.dart';
-
 // This file is generated automatically by Jaspr, do not remove or edit.
 import 'main.server.options.dart';
 
@@ -25,7 +24,7 @@ void main() {
   // with the provided parameters and components.
   runApp(
     Document(
-      title: 'dart_gta_vi',
+      title: 'GTA VI - Jaspr',
       body: App(),
     ),
   );

@@ -16,3 +16,9 @@ help: ## This help dialog.
 serve: ## Start and serve the de development server
 	@rm -rf ./build
 	@jaspr serve
+
+lint: ## perform an analyzer run
+	@dart analyze --dry-run
+
+lint_fix: ## perform an analyzer run with fix
+	@dart fix --apply

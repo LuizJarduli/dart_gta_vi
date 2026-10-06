@@ -10,13 +10,19 @@ class ArtDecoFamilyFont {
 
 final class AppFonts {
   static List<StyleRule> get fonts => [
-    css.fontFace(family: ArtDecoFamilyFont.artDecoMedium, url: 'assets/GTAArtDeco_Medium-s.p.0doalxf~3yos.woff'),
-    css.fontFace(family: ArtDecoFamilyFont.artDecoRegular, url: 'assets/GTAArtDeco_Regular-s.p.0imfurdf3f-dg'),
+    css.fontFace(family: ArtDecoFamilyFont.artDecoMedium, url: '/assets/fonts/GTAArtDeco_Medium-s.p.0doalxf~3yos.woff'),
+    css.fontFace(
+      family: ArtDecoFamilyFont.artDecoRegular,
+      url: '/assets/fonts/GTAArtDeco_Regular-s.p.0imfurdf3f-dg.woff',
+    ),
     css.fontFace(
       family: ArtDecoFamilyFont.artDecoCondensedHeavy,
-      url: 'assets/GTAArtDeco_CondensedHeavy-s.p.0ggau.atpfhca',
+      url: '/assets/fonts/GTAArtDeco_CondensedHeavy-s.p.0ggau.atpfhca.woff',
     ),
-    css.fontFace(family: ArtDecoFamilyFont.artDecoCondensedBold, url: 'GTAArtDeco_CondensedBold-s.p.0t9aeh4uj8z9q'),
-    css.fontFace(family: ArtDecoFamilyFont.artDecoBold, url: 'GTAArtDeco_Bold-s.p.0yn5.wm39fg.l'),
+    css.fontFace(
+      family: ArtDecoFamilyFont.artDecoCondensedBold,
+      url: '/assets/fonts/GTAArtDeco_CondensedBold-s.p.0t9aeh4uj8z9q.woff',
+    ),
+    css.fontFace(family: ArtDecoFamilyFont.artDecoBold, url: '/assets/fonts/GTAArtDeco_Bold-s.p.0yn5.wm39fg.l.woff'),
   ];
 }
