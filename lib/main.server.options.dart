@@ -4,12 +4,12 @@
 // GENERATED FILE, DO NOT MODIFY
 // Generated with jaspr_builder
 
-import 'package:jaspr/server.dart';
+import 'package:dart_gta_vi/app.dart' as _app;
 import 'package:dart_gta_vi/components/counter.dart' as _counter;
 import 'package:dart_gta_vi/components/header.dart' as _header;
-import 'package:dart_gta_vi/constants/theme.dart' as _theme;
 import 'package:dart_gta_vi/pages/about.dart' as _about;
-import 'package:dart_gta_vi/app.dart' as _app;
+import 'package:dart_gta_vi/theme/theme.dart' as _theme;
+import 'package:jaspr/server.dart';
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///
