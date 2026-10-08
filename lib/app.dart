@@ -1,8 +1,8 @@
+import 'package:dart_gta_vi/components/navbar.dart';
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
 
-import 'components/header.dart';
 import 'pages/about.dart';
 import 'pages/home.dart';
 
@@ -22,7 +22,6 @@ class App extends StatefulComponent {
 }
 
 class AppState extends State<App> {
-
   @override
   void initState() {
     super.initState();
@@ -40,21 +39,23 @@ class AppState extends State<App> {
   @override
   Component build(BuildContext context) {
     // This method is rerun every time the component is rebuilt.
-    
+
     // Renders a <div class="main"> html element with children.
     return div(classes: 'main', [
-      Router(routes: [
-        ShellRoute(
-          builder: (context, state, child) => .fragment([
-            const Header(),
-            child,
-          ]),
-          routes: [
-            Route(path: '/', title: 'Home', builder: (context, state) => const Home()),
-            Route(path: '/about', title: 'About', builder: (context, state) => const About()),
-          ],
-        ),
-      ]),
+      Router(
+        routes: [
+          ShellRoute(
+            builder: (context, state, child) => .fragment([
+              const Navbar(),
+              child,
+            ]),
+            routes: [
+              Route(path: '/', title: 'Home', builder: (context, state) => const Home()),
+              Route(path: '/about', title: 'About', builder: (context, state) => const About()),
+            ],
+          ),
+        ],
+      ),
     ]);
   }
 
@@ -68,9 +69,11 @@ class AppState extends State<App> {
       // The '&' refers to the parent selector of a nested style rules.
       css('&').styles(
         display: .flex,
+        width: 100.vw,
         height: 100.vh,
         flexDirection: .column,
         flexWrap: .wrap,
+        backgroundColor: Colors.black,
       ),
       css('section').styles(
         display: .flex,
