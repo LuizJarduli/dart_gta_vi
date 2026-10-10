@@ -1,6 +1,6 @@
 import 'package:jaspr/dom.dart';
 
-class ArtDecoFamilyFont {
+final class ArtDecoFamilyFont {
   static const String artDecoMedium = 'ArtDeco Medium';
   static const String artDecoRegular = 'ArtDeco Regular';
   static const String artDecoCondensedHeavy = 'ArtDeco Condensed Heavy';

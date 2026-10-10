@@ -20,6 +20,12 @@ List<StyleRule> get styles => [
     padding: .zero,
     margin: .zero,
     fontFamily: const .list([FontFamily(ArtDecoFamilyFont.artDecoCondensedBold), FontFamilies.sansSerif]),
+    raw: {
+      'text-wrap': 'balance',
+      '--webkit-text-size-adjust': 'none',
+      '--webkit-font-smoothing': 'antialiased',
+      'font-feature-settings': 'unset !important',
+    },
   ),
   css('h1').styles(
     margin: .unset,

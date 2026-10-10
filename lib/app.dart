@@ -1,10 +1,10 @@
-import 'package:dart_gta_vi/components/navbar.dart';
+import 'package:dart_gta_vi/pages/home/ui/navbar.dart';
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
 
 import 'pages/about.dart';
-import 'pages/home.dart';
+import 'pages/home/home.dart';
 
 // The main component of your application.
 //

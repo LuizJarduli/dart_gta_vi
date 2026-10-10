@@ -6,7 +6,9 @@
 
 import 'package:jaspr/server.dart';
 import 'package:dart_gta_vi/components/counter.dart' as _counter;
-import 'package:dart_gta_vi/components/navbar.dart' as _navbar;
+import 'package:dart_gta_vi/components/divider.dart' as _divider;
+import 'package:dart_gta_vi/pages/home/ui/navbar.dart' as _navbar;
+import 'package:dart_gta_vi/pages/home/ui/vi_logo.dart' as _vi_logo;
 import 'package:dart_gta_vi/pages/about.dart' as _about;
 import 'package:dart_gta_vi/theme/theme.dart' as _theme;
 import 'package:dart_gta_vi/app.dart' as _app;
@@ -34,7 +36,9 @@ ServerOptions get defaultServerOptions => ServerOptions(
     ..._theme.styles,
     ..._app.AppState.styles,
     ..._counter.CounterState.styles,
-    ..._navbar.Navbar.styles,
+    ..._divider.Divider.styles,
     ..._about.About.styles,
+    ..._navbar.Navbar.styles,
+    ..._vi_logo.ViLogo.styles,
   ],
 );

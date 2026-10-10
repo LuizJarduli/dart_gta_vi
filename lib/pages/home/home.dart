@@ -1,7 +1,7 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
-import '../components/counter.dart';
+import '../../components/counter.dart';
 
 class Home extends StatelessComponent {
   const Home({super.key});
